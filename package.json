@@ -1,0 +1,22 @@
+{
+  "name": "zl-enc-dec",
+  "version": "1.0.0",
+  "description": "封装常用的js加密解密——如Md5-Rsa-Aes等",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pak": "rollup src/main.js --file index.js --format umd --name 'zl-enc-dec'",
+    "tsc": "tsc -d --allowJS index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zl-fire/zl-enc-dec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zl-fire/zl-enc-dec/issues"
+  },
+  "homepage": "https://github.com/zl-fire/zl-enc-dec#readme"
+}
