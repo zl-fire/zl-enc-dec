@@ -12,15 +12,16 @@
  import zl_enc_dec from "zl-enc-dec";
 
   //script引入
- <script src="https://cdn.jsdelivr.net/npm/zl-enc-dec@1.0.0/index.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/zl-enc-dec@1.0.1/index.js"></script>
  const zl_enc_dec=window["zl-enc-dec"];
   
 ```
 
 ## 使用MD5
+
 ```js
 let { md5 }=zl_enc_dec;
-  //加密字符串
+//加密字符串
 const hash = md5('string to hash');
 
 //加密buffers
@@ -42,4 +43,6 @@ const hash = md5(['hash', 'this', 'array']);
 //加密primitives
 const hash = md5(3.14159265359);
 const hash = md5(true);
+
+// 更详细使用：https://github.com/blueimp/JavaScript-MD5
 ```

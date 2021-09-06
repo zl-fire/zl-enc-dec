@@ -1,5 +1,6 @@
 
-const md5_enc = require("../lib/md5");
+import md5_enc from "blueimp-md5";
+
 /**
  * @description 可以对任何数据进行md5加密
  * @param {any} params 要加密的对象，可以为任何结构
