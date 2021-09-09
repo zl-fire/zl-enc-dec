@@ -1,31 +1,11 @@
 /**
- * @description 可以对任何数据进行md5加密
- * @param {any} params 要加密的对象，可以为任何结构
- * @example
+ * Calculates MD5 value for a given string.
+ * If a key is provided, calculates the HMAC-MD5 value.
+ * Returns a Hex encoded string unless the raw argument is given.
  *
- * //加密字符串
- *  const hash = md5('string to hash');
- *
- * //加密buffers
- *  const hash = md5(Buffer.from('carmine'));
- *
- * //加密TypedArrays
- * const int16Array = new Int16Array(2);
- * int16Array[0] = 42;
- * const hash = md5(int16Array);
- *
- * //加密objects
- * const hash = md5({
- *     name: 'carmine'
- * });
- *
- * //加密arrays
- * const hash = md5(['hash', 'this', 'array']);
- *
- * //加密primitives
- * const hash = md5(3.14159265359);
- * const hash = md5(true);
- *
- * @returns {string} 加密产生的hash值
+ * @param {string} string Input string
+ * @param {string} [key] HMAC key
+ * @param {boolean} [raw] Raw output switch
+ * @returns {string} MD5 output
  */
-export function md5(params: any): string;
+export function md5(string: string, key?: string, raw?: boolean): string;
